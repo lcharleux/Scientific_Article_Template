@@ -1,0 +1,49 @@
+\documentclass{standalone}
+\usepackage{../article/style}
+
+
+
+\begin{document}
+
+
+\begin{tikzpicture} % Environnement pour faire un dessin avec Tikz
+  \begin{axis}[
+              xlabel = {Time, $t$ [\second]},
+              ylabel = {Amplitude, $y$ [\volt]},
+              title = {Some useless maths: $\zeta = \sum_{i=0}^{+\infty} \kappa_i$},
+              width = \textwidth,
+              height = \textwidth / 2,
+              minor tick num = 4,
+              ymin = -20.,
+              ymax = 20.,
+              xmin = 5.,
+              xmax = 10.,
+              %axis x line = bottom,
+              %axis y line = left,
+              ]
+    \addplot [
+              color = blue,
+              %mark = o,
+              line width = 1pt,
+              name path = A,
+             ]
+             table[x = x, 
+                   y = ya,
+                   col sep = comma]{\currfiledir../../data/data.csv};
+    \addplot [
+              color = red,
+              %mark = o,
+              line width = 1pt,
+              name path = B,
+             ]
+             table[x = x, 
+                   y = yb,
+                   col sep = comma]{\currfiledir../../data/data.csv}; 
+    \addplot [
+              color = SeaGreen!50,
+             ]
+             fill between[of = A and B];                          
+  \legend{$y_a$, $y_b$}
+  \end{axis}	
+\end{tikzpicture}
+\end{document}

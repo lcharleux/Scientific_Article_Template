@@ -12,5 +12,7 @@
 *.snm
 *.bbl
 *.xml
+*__pycache__*
+*.pyc
 
 

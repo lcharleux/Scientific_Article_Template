@@ -1,0 +1,69 @@
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign} % a font close to that chosen by Elsevier
+\usepackage[T1]{fontenc}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage[pagewise,modulo]{lineno}
+%\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage[squaren,Gray]{SIunits}
+%\usepackage{standalone}
+%\usepackage{pgfplots}
+%\usetikzlibrary{patterns}
+\usepackage{color}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Article template},    % title
+    pdfauthor={Researcher 1},     % author
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=magenta,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue,           % color of external links
+    colorlinks= true,
+ }        
+ 
+\usepackage[hyperpageref]{backref}  % ref biblio inversée   
+
+\linenumbers
+
+\usepackage{comment}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{blindtext}
+\usepackage{standalone}
+
+\usepackage{currfile}
+
+\usepackage{pgfplots} % Grapiques avec PGFPlots
+\usepgfplotslibrary{fillbetween}
+% LA MEME CHOSE AVEC PGFPLOTS
+\pgfplotsset{ % Options globales
+            major grid style = {dashed, black},
+            axis line style = {black, line width = 1pt},
+            grid = {major},
+		    %label style={font=\normalsize\bfseries},            
+            tick label style={font=\footnotesize},
+            title style={font=\normalsize\bfseries},
+            every axis x label/.append style={font=\normalsize\bfseries},
+            every axis y label/.append style={font=\normalsize\bfseries},
+            %every axis title/.append style={font=\normalsize, thick},
+            }
